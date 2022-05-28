@@ -1,0 +1,154 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* linear gradient generator used from https://mdbootstrap.com/docs/standard/tools/design/gradients/ */
+.gradient-custom {
+    /* fallback for old browsers */
+    /* background: #a97582; creating issues*/
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(169, 117, 130, 0.5), rgba(110, 106, 113, 0.5)); */
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(169, 117, 130, 0.5), rgba(110, 106, 113, 0.5))
+}
+
+
+.navbar-brand {
+    margin: 0 10px;
+}
+
+.button1 {
+    /* button at top right */
+    margin-top: 10px;
+    border-radius: 18px;
+    background-color: orange;
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+.mybutton1 {
+    margin-top: 20px;
+}
+
+.mybutton2 {
+    margin: 15px 0;
+}
+
+.trust-me-bro {
+    margin-top: 40px;
+    color: rgb(136, 31, 31);
+}
+
+.shield {
+    margin-top: 60px; 
+}
+
+.baddies {
+    margin-top: 70px;
+    font-size: 2rem;
+}
+
+.myform {
+    margin-top: 100px;
+    width: 80%;
+}
+
+.btn-default {
+    background: orange;
+    text-decoration: none;
+}
+
+/* button hover function for all buttons */
+.btn:hover {
+    cursor:pointer;
+    background-color: rgb(148, 80, 80);
+}
+
+.working-from {
+    margin-top: 90px;
+    width: 100%;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+/* from the button class="button btn-info btn-link" */
+
+.awards {
+    margin-top: 120px;
+    background-color: rgb(67, 130, 185);
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.companies {
+    margin-top: 90px;
+    background-color: aliceblue;
+    padding: 5px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.three-tables {
+    margin-top: 150px;
+    position: relative;
+}
+
+.home {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.business {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.pro {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.something {
+    background-color: darkgray;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+figure {
+    margin-top: 140px;
+}
+
+footer ul {
+    display:flex;
+    justify-content: end;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+footer span {
+    margin-top: 6px;
+    display: flex;
+    justify-content: end;
+    color: dimgray;
+}

@@ -1,0 +1,251 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* linear gradient generator used from https://mdbootstrap.com/docs/standard/tools/design/gradients/ */
+.gradient-custom {
+    /* fallback for old browsers */
+    /* background: #a97582; creating issues*/
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(169, 117, 130, 0.5), rgba(110, 106, 113, 0.5)); */
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(169, 117, 130, 0.5), rgba(110, 106, 113, 0.5))
+  }
+  
+
+.button1 {
+    /* button at top right */
+    
+    background-color: orange;
+    border: none;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.trust-me-bro {
+    margin-top: 45px;
+    color: rgb(136, 31, 31);
+}
+
+.shield {
+    margin-top: 60px; 
+}
+
+.baddies {
+    margin-top: 70px;
+}
+
+.myform {
+    margin-top: 100px;
+    width: 80%;
+}
+
+.btn-default {
+    background: orange;
+    text-decoration: none;
+}
+
+/* button hover function for all buttons */
+.btn:hover {
+    cursor:pointer;
+    background-color: rgb(148, 80, 80);
+}
+
+.working-from {
+    margin-top: 90px;
+    
+    width: 100%;
+    /* border-radius: 10px; */
+}
+
+/* from the button class="button btn-info btn-link" */
+
+.companies {
+    margin-top: 90px;
+    background-color: aliceblue;
+    padding: 10px;
+   
+}
+
+.three-tables {
+    margin-top: 150px;
+    position: relative;
+}
+
+.home {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+}
+
+.business {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+}
+
+.pro {
+    outline: 3px solid black;
+    background-color: aliceblue;
+    height: auto;
+}
+
+.something {
+    background-color: darkgray;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+figure {
+    margin-top: 140px;
+}
+
+ul {
+    list-style: none; /* already exists below, will remove later*/
+}
+/*from this point down, all new content for landing-test page*/
+footer ul {
+    display:flex;
+    justify-content: end;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+footer span {
+    margin-top: 6px;
+    display: flex;
+    justify-content: end;
+    color: dimgray;
+}
+
+header a {
+    text-decoration: none;
+}
+header {
+    padding: 0 20px;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: rgb(136, 31, 31);
+}
+
+.mynav {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mynav .contentbar {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.mynav .contentbar a {
+    color: azure;
+}
+
+.mynav .contentbar:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#signup {
+    border: 1px solid orange;
+    color: orange;
+}
+
+#signup a {
+    color: orange;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* borrowed the js code below from a youtube tutorial creator called JavaScript Academy */
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+}
+
+/* code below that only shows the hamburger menu in mobile */
+#hamburger-icon {
+    display: block;
+}
+
