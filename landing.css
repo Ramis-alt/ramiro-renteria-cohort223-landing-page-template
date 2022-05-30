@@ -98,6 +98,11 @@ body,html {
     position: relative;
 }
 
+.signup-selection {
+    margin-top: 80px;
+    position: relative;
+}
+
 .home {
     outline: 3px solid black;
     background-color: aliceblue;
@@ -152,3 +157,148 @@ footer span {
     justify-content: end;
     color: dimgray;
 }
+
+.registration {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    /* max-width: 100%; */
+    padding: 25px 50px;
+    /* margin-right: 20px; */
+    /* margin-left: -20px; */
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(67, 130, 185);
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, .5);
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+hr {
+    background-color: white;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom: 2px;
+    transform: all 0.3s ease;
+}
+
+/* used this code sample from a youtube video tutorial from CodingLab which adds hover function to form bar */
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: blueviolet;
+}
+
+form .packet-selection .selection-title {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+form .packet-selection .catergory {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.packet-selection .catergory label {
+    display: flex;
+    align-items: center;
+}
+
+.packet-selection .catergory .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+/* used this code sample from a youtube video tutorial from CodingLab which adds and removes a checkbox menu */
+ #dot-1:checked ~ .catergory label .one,
+ #dot-2:checked ~ .catergory label .two,
+ #dot-3:checked ~ .catergory label .three { 
+
+     border-color: #d9d9d9;
+     background: #9b59b6;
+ }
+
+ form input[type="radio"] {
+     display: none;
+ }
+
+ form .button {
+     height: 45px;
+     margin: 45px 0;
+ }
+
+ form .button input {
+     height: 100%;
+     width: 100%;
+     outline: none;
+     color: #fff;
+     border: none;
+     font-size: 18px;
+     font-weight: 500;
+     border-radius: 5px;
+     letter-spacing: 1px;
+     background: rgb(227, 174, 75);
+ }
+
+ form .button input:hover {
+     background:  rgb(148, 80, 80);;
+ }
+
+ @media (max-width: 584px) {
+     .registration {
+         max-width: 100%;
+     }
+     form .user-details .input-box {
+        margin: 15px;
+        width: 100%;
+    }
+    form .packet-selection .catergory {
+        width: 100%;
+    }
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+ }
+
+ .signup-footer {
+     margin-top: 100px;
+ }
