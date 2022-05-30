@@ -137,6 +137,16 @@ body,html {
     margin-left: -15px;
 }
 
+.pricing {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
 figure {
     margin-top: 140px;
 }
